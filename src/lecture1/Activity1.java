@@ -1,6 +1,6 @@
-package java1;
+package lecture1;
 import java.util.Scanner;
-public class btvn1 {
+public class Activity1 {
        public static void main(String args[]){
            Scanner scanner = new Scanner(System.in); // khai báo scanner
            System.out.print("Mời nhập a: "); // nhập biến a
