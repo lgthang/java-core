@@ -7,9 +7,7 @@ public class Actiity5 {
         Scanner scanner = new Scanner(System.in); // khai báo scanner
         System.out.print("Mời nhập : " ); // nhập số
         int n = scanner.nextInt(); // lấy giá trị từ bàn phím
-        int nn = scanner.nextInt();
-        int nnn = scanner.nextInt();
-        System.out.println("Kết Quả : " + n + nn + nnn + "=");
+        System.out.println(n * 1 + " + " + n * 11 + " + " + n * 111 + " = " + (n * 1 + n * 11 + n * 111));
 
     }
 }
