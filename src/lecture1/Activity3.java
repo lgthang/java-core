@@ -1,6 +1,6 @@
 package lecture1;
 import java.util.Scanner;
-public class Activity2 {
+public class Activity3 {
     public static void main(String [] args){
         Scanner scanner = new Scanner(System.in); // khai báo scanner
         System.out.print("Mời nhập a: "); // nhập giá trị của a
