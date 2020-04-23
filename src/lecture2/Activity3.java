@@ -9,8 +9,12 @@ public class Activity3 {
         System.out.print("n = ");
         int n = sc.nextInt();
         int sum = 0;
-        for (int i = 0; i <=n ; i++) {
-            System.out.print(i + "+");
+        for (int i = 1; i <=n ; i++) {
+            if(i==n){
+            System.out.print(i);}
+            else {
+                System.out.print(i + "+");
+            }
             sum = sum + i;
         }
         System.out.println(" = " + sum);
