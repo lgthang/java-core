@@ -15,26 +15,32 @@ public class Activity31 {
         }
         System.out.println("Mảng gốc : ");
         for (int j = 0; j < arr.length; j++) {
-            System.out.println(arr[j]);
+            System.out.print(arr[j]);
         }
         System.out.println("Độ dài của mảng là: " + arr.length);
         System.out.println("Mảng sau khi  bỏ trùng : ");
-        for (int i = 0; i <n ; i++) {
-            for (int j = i + 1; j <n ; ) {
-                if (arr[i] == arr[j]){
-                    for (int x = j; x < n ; x++) {
-                        arr[x] = arr[x + 1];
-                    }
-                    n--;
-                } else {
-                    j++;
-                }
-                for (int m = 0; m <n ; m++) {
-                    System.out.println(arr[m]);
+        int[] result = new int[arr.length];
+        int newLength = 0;
+        for (int i = 0; i < arr.length; i++) {
+            boolean exited = false;
+            for (int j = 0; j < newLength; j++) {
+                if (arr[i] == result[j]) {
+                    exited = true;
+                    break;
                 }
             }
+            if (!exited) {
+                result[newLength] = arr[i];
+                newLength++;
+            }
+        }
+        int[] b = new int[newLength];
+        for (int i = 0; i < newLength; i++) {
+            b[i] = result[i];
+        }
+        for (int i = 0; i < newLength; i++) {
+            System.out.println(b[i]);
         }
     }
 }
-
 
