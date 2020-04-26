@@ -8,8 +8,12 @@ public class Actyvity1 {
         System.out.print("Mời bạn nhập n: ");
         int n = sc.nextInt();
         for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n - i; j++) System.out.print(" "); // in ra dấu cách
-            for (int k = 1; k <= i; k++) System.out.print("* ");// in ra dấu sao
+            for (int j = 0; j < n - i; j++) {
+                System.out.print("");
+            } // in ra dấu cách
+            for (int j = 0; j < 2 * i - 1; j++) {
+                System.out.print("*");
+            } // in ra dấu sao
             System.out.println("");
         }
     }
