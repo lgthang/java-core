@@ -15,7 +15,7 @@ public class Activity31 {
         }
         System.out.println("Mảng gốc : ");
         for (int j = 0; j < arr.length; j++) {
-            System.out.print(arr[j]);
+            System.out.println(arr[j]);
         }
         System.out.println("Độ dài của mảng là: " + arr.length);
         System.out.println("Mảng sau khi  bỏ trùng : ");
